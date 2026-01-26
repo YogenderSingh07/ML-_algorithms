@@ -1,0 +1,26 @@
+🚀 Overview
+The goal was to move beyond basic Bag of Words (BoW) and apply NLP techniques to a large-scale, real-world dataset. I used a Multinomial Naive Bayes classifier, which is specifically designed for text data where features represent word frequencies.
+
+🛠️ Technical Stack
+Feature Extraction: CountVectorizer (Bag of Words)
+
+Model: MultinomialNB
+
+Library: scikit-learn
+
+📊 Key Features & Hyperparameters
+To optimize the model, I focused on:
+
+Stop Words: Removed common English words (the, is, a) to focus on sentiment-bearing words.
+
+Vocabulary Management: Used sparse matrices to efficiently handle the large volume of unique words in the reviews.
+
+📈 Results
+The model's performance was evaluated using a test split, resulting in the following:
+
+Model Accuracy
+Accuracy Score: 85.05
+
+Metric	Precision	Recall	F1-Score
+Negative	0.83	   0.87   0.85
+Positive	0.87	   0.83   0.85
